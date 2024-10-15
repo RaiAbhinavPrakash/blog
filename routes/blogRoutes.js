@@ -35,9 +35,6 @@ router.post("/", upload.single("coverImage"), async (req, res) => {
     coverImageURL: `/uploads/${req.file.filename}`,
   });
 
-  console.log(req.body);
-  console.log(req.file);
-
   return res.redirect(`/blog/${blog._id}`);
 });
 

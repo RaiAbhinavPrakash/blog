@@ -41,7 +41,7 @@
         <% comments.forEach(comment => { %>
         <div>
           <img src="<%= comment.createdBy.profileImageURL %>" width="50px" />
-          <%= comment.createdBy.fullName %>:
+          <%= comment.createdBy.fullName %>
           <pre><%= comment.content %></pre>
         </div>
         <% }) %>

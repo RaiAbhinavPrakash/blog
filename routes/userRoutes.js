@@ -48,8 +48,6 @@ router.post("/signin", async (req, res) => {
     }
 
     const token = createTokenForUser(user);
-
-    console.log(token);
     
     // 4. If passwords match, login is successful
     return res.cookie('token', token).redirect("/");
